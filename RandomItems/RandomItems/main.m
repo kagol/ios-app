@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         
         // 1.使用数组
         NSMutableArray *items = [[NSMutableArray alloc] init];
-        [items addObject:@"One"];
+        /*[items addObject:@"One"];
         [items addObject:@"Two"];
         [items addObject:@"Three"];
         [items insertObject:@"Zero" atIndex:0];
@@ -29,12 +29,29 @@ int main(int argc, const char * argv[]) {
         // 使用快速枚举，比for循环更简洁、更快
         for (NSString *item in items) {
             NSLog(@"%@", item);
+        }*/
+        
+        // 4.使用类方法
+        /*for (int i = 0; i < 10; i++) {
+            BNRItem *item = [BNRItem randomItem];
+            [items addObject:item];
         }
         
-        items = nil;
+        // id lastObj = [items lastObject];
+        // [lastObj count];
+        // [items count];
+        
+        for (BNRItem *item in items) {
+            NSLog(@"%@", item);
+        }*/
+        
+        // 完成初级练习，试图返回第11个对象（index为10）
+        // NSLog(@"%@", items[10]);
+        
+        // items = nil;
         
         // 2.使用对象
-        BNRItem *item = [[BNRItem alloc] init];
+        /*BNRItem *item = [[BNRItem alloc] init];
         
         [item setItemName:@"Red Sofa"];
         [item setSerialNumber:@"A1B2C"];
@@ -53,7 +70,11 @@ int main(int argc, const char * argv[]) {
         BNRItem *item1 = [[BNRItem alloc] initWithItemName:@"萨士比亚" valueInDollars:200 serialNumber:@"12345D"];
         NSLog(@"%@", item1);
         BNRItem *item2 = [[BNRItem alloc] initWithItemName:@"Kagol Anthony"];
-        NSLog(@"%@", item2);
+        NSLog(@"%@", item2);*/
+        
+        // 完成中级练习
+        BNRItem *item3 = [[BNRItem alloc] initWithItemName:@"Anthony" serialNumber:@"23556I"];
+        NSLog(@"%@", item3);
         
         // NSLog(@"Hello, World!");
     }
