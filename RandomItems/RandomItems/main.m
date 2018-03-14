@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRItem.h" // 为什么不是导入BNRItem.m
+#import "BNRContainer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,7 +33,7 @@ int main(int argc, const char * argv[]) {
         }*/
         
         // 4.使用类方法
-        /*for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             BNRItem *item = [BNRItem randomItem];
             [items addObject:item];
         }
@@ -42,8 +43,8 @@ int main(int argc, const char * argv[]) {
         // [items count];
         
         for (BNRItem *item in items) {
-            NSLog(@"%@", item);
-        }*/
+            // NSLog(@"%@", item);
+        }
         
         // 完成初级练习，试图返回第11个对象（index为10）
         // NSLog(@"%@", items[10]);
@@ -73,8 +74,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", item2);*/
         
         // 完成中级练习
-        BNRItem *item3 = [[BNRItem alloc] initWithItemName:@"Anthony" serialNumber:@"23556I"];
-        NSLog(@"%@", item3);
+        BNRItem *item3 = [[BNRItem alloc] initWithItemName:@"Anthony" valueInDollars:200 serialNumber:@"23556I"];
+        // NSLog(@"%@", item3);
+        
+        // 完成高级练习
+        BNRContainer *subitems = [[BNRContainer alloc] initWithContainerName:@"Kagol" subitems:items];
+        NSLog(@"%@", subitems);
         
         // NSLog(@"Hello, World!");
     }
