@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C314A120691C18000CB02E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C314A020691C18000CB02E /* logo.png */; };
 		24D362F2205F7B4D0076D580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D362F1205F7B4D0076D580 /* AppDelegate.m */; };
 		24D362F5205F7B4D0076D580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D362F4205F7B4D0076D580 /* ViewController.m */; };
 		24D362F8205F7B4D0076D580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D362F6205F7B4D0076D580 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24C314A020691C18000CB02E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../../../../../Downloads/Solutions/00-Resources/logo.png"; sourceTree = "<group>"; };
 		24D362ED205F7B4D0076D580 /* Hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D362F0205F7B4D0076D580 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D362F1205F7B4D0076D580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		24D362EF205F7B4D0076D580 /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
+				24C314A020691C18000CB02E /* logo.png */,
 				24D362F0205F7B4D0076D580 /* AppDelegate.h */,
 				24D362F1205F7B4D0076D580 /* AppDelegate.m */,
 				24D362F3205F7B4D0076D580 /* ViewController.h */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D362FD205F7B4D0076D580 /* LaunchScreen.storyboard in Resources */,
+				24C314A120691C18000CB02E /* logo.png in Resources */,
 				24D362FA205F7B4D0076D580 /* Assets.xcassets in Resources */,
 				24D362F8205F7B4D0076D580 /* Main.storyboard in Resources */,
 			);
